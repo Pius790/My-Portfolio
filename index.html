@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pius Unwaba</title>
+    <link rel="stylesheet" href="style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+    <div class="name">PIUS O. UNWABA</div>
+    
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div  class="navbar" id = "navbar">
+        <nav >
+        <a href="index.html"  class="button"><span></span>HOME</a>
+        <a href="about.html"  class="button"><span></span>ABOUT</a>
+        <a href="skill.html"  class="button"><span></span>SKILL</a>
+        <a href="contact.html"  class="button"><span></span>CONTACT</a>
+         <a href="project.html"  class="button"><span></span>PROJECT</a>
+       </nav>
+
+    </div>
+    </div>
+    <div class="layout">
+	<div class="hero-section">
+  <div class="left-content">                    
+    <hr>
+    <div class="text-animation">
+      Hi, I'm Pius, I'm a <br>
+      <span id="animated-word">Software Engineer</span>
+    </div>
+    <div class="motto1">
+      <p>Building Elegant Solutions</p>
+      <p>One Line of Code at a Time</p>
+    </div>
+    <div class="hire">
+    <a 
+  href="https://wa.me/2349124097991?text=Hi%20Pius,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity.%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards,"
+  target="_blank"
+  class="hire1">
+  Hire
+</a>
+
+
+    </div>
+  </div>
+
+  <div class="home-img">
+    <img src="Asset/background2-removebg-preview (1).png" alt="">
+  </div>
+</div>
+  
+       
+    <main class="flex">
+    <section class="items">
+    <h4>About</h4>
+    <p>Meet Pius Unwaba, a curious and</p>
+    <p>driven junior software engineer</p>
+    <p>with a growing passion for </p>
+    <p> problem-solving and clean code...</p>
+     <div class="container">
+     <div  class="navbar">
+     <a href="about.html"  class="button"><span></span>Learn More</a>
+     </div>
+     </div>
+</section>
+<section class="items2">
+    <h4>Skill</h4>
+    <p>A junior full-stack developer with </p>
+    <p>experience in building responsive </p>
+    <p>front-end interfaces and dynamic </p>
+    <p> back-end functionality... </p>
+     <div class="container">
+     <div  class="navbar">
+     <a href="skill.html"  class="button"><span></span>Learn More</a>
+     </div>
+</section>
+</main>
+</div>
+</div>
+<div>
+    <footer class="footer">
+        <div class="social">
+    <a href="https://www.linkedin.com/in/pius-unwaba-1387b8311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+    <a href="https://mailto:unwabapius@gmail.com" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail'></i></a>
+    <a href="https://wa.me/2349124097991" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i></a>
+    <a href="https://t.me/YourTelegramUsername" target="_blank" rel="noopener noreferrer"><i class='bx bxl-telegram'></i></a>
+</div>
+
+
+        <ul class="list">
+            
+
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+            
+        </ul>
+        <p class="copyright">
+            @ Pius Unwaba | All Rights Reserved
+        </p>
+    </footer>
+</div>
+
+  <script>
+    const words = [
+      "Software Engineer",
+      "Web Developer And Designer",
+      "Software Tester",
+      "UI / UX Designer"
+    ];
+
+    let index = 0;
+    const animatedWord = document.getElementById("animated-word");
+
+    setInterval(() => {
+      index = (index + 1) % words.length;
+      animatedWord.textContent = words[index];
+    }, 2000); // Change every 2 seconds
+  </script>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>
