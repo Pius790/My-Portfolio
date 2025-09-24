@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Pius Unwaba" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pius Unwaba</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
       <div class="container">
-          <div class="name">PIUS O. UNWABA</div>
-           <div  class="navbar">
+           <img src="Asset/ChatGPT Image Sep 23, 2025, 12_29_58 PM.png" alt="Logo" class="responsive-img">
+
+          <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+
+
+           <div id="navbar" class="navbar">
               <nav clas>
                <a href="index.html"  class="button"><span></span>HOME</a>
                <a href="about.html"  class="button"><span></span>ABOUT</a>
@@ -22,14 +28,14 @@
               </div>
                </div>
 
-          <div class="text-animation">
+    
+   
+               </div>
+
+          <div class="About">
            CONTACT
            </div>
-            <hr style="width: 180px;
-        margin-top: 1px;
-        margin-left: 28px;
-        background-color: white;
-        height: 5px;">
+            <hr class="hr2">
 
        <div class="contact-section">
 
@@ -42,7 +48,7 @@
   </a>
 
   
-  <a href="mailto:unwabapiuse@gmail.com" target="_blank" rel="noopener noreferrer">
+  <a href="https://mailto:unwabapiuse@gmail.com" target="_blank" rel="noopener noreferrer">
     <div class="contact-box">
       <img src="Asset/email-removebg-preview.png" alt="Email">
       <p>Email</p>
@@ -58,13 +64,14 @@
   </a>
 
   
-  <a href="https://t.me/YourTelegramUsername" target="_blank" rel="noopener noreferrer">
+   <a href="https://github.com/pius790" target="_blank" rel="noopener noreferrer">
     <div class="contact-box">
-      <img src="Asset/telegram-removebg-preview.png" alt="Telegram">
-      <p>Telegram</p>
+      <img src="Asset/github-removebg-preview.png" alt="GitHub">
+      <p>GitHub</p>
     </div>
   </a>
 
+  
 </div>
 
   
@@ -81,7 +88,7 @@
     <a href="https://www.linkedin.com/in/pius-unwaba-1387b8311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
     <a href="https://mailto:unwabapius@gmail.com" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail'></i></a>
     <a href="https://wa.me/2349124097991" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i></a>
-    <a href="https://t.me/YourTelegramUsername" target="_blank" rel="noopener noreferrer"><i class='bx bxl-telegram'></i></a>
+     <a href="https://github.com/pius790" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
 </div>
 
         <ul class="list">
@@ -96,13 +103,21 @@
             </li>
 
             
-        </ul>
-         <div class="navbar" style="justify-content: center; margin-top: 5px;">
-         <a href="index.html"  class="button"><span></span>BACK</a>
-         </div>
+        </ul><br>
+
+        <a href="skill.html" class="back"  style="justify-content: center; margin-bottom: 100px;"><span></span>BACK</a>
         <p class="copyright">
             @ Pius Unwaba | All Rights Reserved
         </p>
     </footer>
+
+       <script>
+    // ✅ Fixed hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('open');
+    });
+  </script>  
   </body>
 </html>
