@@ -256,7 +256,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
   gap: 30px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .grid-item {
@@ -567,6 +567,21 @@
       color: var(--text-color);
       border: none;
     }
+
+    .btn {
+    display: inline-block;
+    padding: 12px 17px;
+    background-color: black; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: black;
+  }
 
 
 
